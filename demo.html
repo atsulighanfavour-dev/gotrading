@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Fetch a JSON file with XMLHttpRequest</h2>
+    <p>
+      Content written as an JSON array will be converted into a JavaScript
+      array.
+    </p>
+    <p id="demo"></p>
+
+     <script>
+      const xmlhttp = new XMLHttpRequest();
+      xmlhttp.onload = function () {
+        const myArr = JSON.parse(this.responseText);
+        document.getElementById("demo").innerHTML = myArr[2];
+      };
+      xmlhttp.open("GET", "json-demo-array.txt", true);
+      xmlhttp.send();
+    </script>
+
+    <h2>Get JSON Data from a PHP Server</h2>
+    <p id="demo1"></p>
+
+    <script>
+      const xmlhttp = new XMLHttpRequest();
+
+      xmlhttp.onload = function () {
+        const myObj = JSON.parse(this.responseText);
+        document.getElementById("demo1").innerHTML = myObj.name;
+      };
+      xmlhttp.open("GET", "index.php", true);
+      xmlhttp.send();
+    </script>
+  </body>
+</html>
