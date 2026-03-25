@@ -6,7 +6,7 @@ body {
 /* Add Dark Overlay on Background Image */
 .hero {
   height: 100vh;
-  background-image: url("/images/Forex.webp");
+  background-image: url("images/Forex.webp");
   background-size: cover;
   background-position: center;
   animation: changeBg 12s infinite;
@@ -16,10 +16,10 @@ body {
 /* change background image every 4 seconds */
 @keyframes changeBg {
   0% {
-    background-image: url("/images/download\ \(1\).jfif");
+    background-image: url("images/download\ \(1\).jfif");
   }
   33% {
-    background-image: url("/images/bitcoin.jpg");
+    background-image: url("images/bitcoin.jpg");
   }
 }
 
@@ -257,27 +257,27 @@ body {
 
 /* Background Images */
 .crypto {
-  background-image: url("/images/bitcoin.jpg");
+  background-image: url("images/bitcoin.jpg");
 }
 
 .forex {
-  background-image: url("/images/best_forex_traders.jpeg");
+  background-image: url("images/best_forex_traders.jpeg");
 }
 
 .loans {
-  background-image: url("/images/3.jpg");
+  background-image: url("images/3.jpg");
 }
 
 .payroll {
-  background-image: url("/images/1.jpg");
+  background-image: url("images/1.jpg");
 }
 
 .pools {
-  background-image: url("/images/hedge.jpg");
+  background-image: url("images/hedge.jpg");
 }
 
 .service {
-  background-image: url("/images/soft6.jpeg");
+  background-image: url("images/soft6.jpeg");
 }
 
 /* Dark Overlay */
