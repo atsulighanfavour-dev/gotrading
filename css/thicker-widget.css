@@ -27,25 +27,51 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90px;
+  min-height: 60px;
   border-bottom: 1px solid var(--line);
 }
 
 .ticker-widget__footer {
-  min-height: 44px;
+  min-height: 30px;
   border-top: 1px solid var(--line);
   border-bottom: 0;
 }
 
 .ticker-widget__title {
-  margin: 0;
-  font-size: 19px;
+  margin-right: 45px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--muted);
 }
 
 .ticker-widget__title span,.ticker-footer-link span {
   color: var(--brand);
+}
+
+.ticker-widget__title span {
+  position: relative;
+  top: -18px;
+  left: 170px;
+}
+
+.ticker-footer {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 75px;
+}
+
+.ticker-footer-link {
+  text-decoration: none;
+}
+
+.ticker-footer-link span {
+  position: relative;
+  bottom: -17px;
+  right: 75px;
 }
 
 .ticker-widget__controls {

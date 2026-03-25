@@ -1,24 +1,23 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GoTrading</title>
     <!-- Font Awesome for icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="/css/header.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/market.css" />
-    <link rel="stylesheet" href="/css/thicker-widget.css" />
+    <link rel="stylesheet" href="/css/header.css" >
+    <link rel="stylesheet" href="/css/styles.css" >
+    <link rel="stylesheet" href="/css/market.css" >
+    <link rel="stylesheet" href="/css/thicker-widget.css" >
     <script src="/js/header.js" defer></script>
     <script src="/js/script.js" defer></script>
     <script src="/js/market.js" defer></script>
@@ -423,11 +422,11 @@
           </div>
         </div>
       </section>
-      
+
       <section class="ticker-widget">
         <div class="ticker-widget__header">
           <p class="ticker-widget__title">
-            Cryptocurrency Market by <span>TradingView</span>
+            Cryptocurrency Market by <span class="">TradingView</span>
           </p>
         </div>
         <div class="ticker-widget__controls">
@@ -450,12 +449,13 @@
         </div>
 
         <div class="ticker-strip" id="tickerStrip"></div>
-
-        <footer class="ticker-widget__footer">
-          <button class="ticker-footer-link" id="quotesButton" type="button">
-            Quotes by <span>TradingView</span>
-          </button>
-        </footer>
+        <button id="quotesButton" type="button">
+        </button>
+        <div class="ticker-widget__footer">
+          <a class="ticker-footer-link" href="#" target="_blank">
+            <p class="ticker-footer"><span>Quotes by</span>TradingView</p>
+          </a>
+        </div>
       </section>
 
       <footer></footer>
