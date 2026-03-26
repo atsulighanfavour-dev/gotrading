@@ -255,29 +255,10 @@ body {
   position: relative;
 }
 
-/* Background Images */
-.crypto {
-  background-image: url("/images/bitcoin.jpg");
-}
-
-.forex {
-  background-image: url("/images/best_forex_traders.jpeg");
-}
-
-.loans {
-  background-image: url("/images/3.jpg");
-}
-
-.payroll {
-  background-image: url("/images/1.jpg");
-}
-
-.pools {
-  background-image: url("/images/hedge.jpg");
-}
-
-.service {
-  background-image: url("/images/soft6.jpeg");
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Dark Overlay */
