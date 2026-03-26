@@ -29,7 +29,7 @@ function renderTickerQuotes() {
       const badge = quote.badge
         ? `<span class="ticker-quote__badge">${quote.badge}</span>`
         : "";
-      const flag = quote.flagged
+      const flag = quote.flagged 
         ? `<span class="ticker-quote__flag">!</span>`
         : "";
       const changeBlock = hasMove
