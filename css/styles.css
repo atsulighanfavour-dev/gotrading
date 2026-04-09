@@ -6,11 +6,17 @@ body {
 /* Add Dark Overlay on Background Image */
 .hero {
   height: 100vh;
-  background-image: url("/images/Forex.webp");
+ /* background-image: url("/images/Forex.webp");*/
   background-size: cover;
   background-position: center;
   animation: changeBg 12s infinite;
   position: relative;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* change background image every 4 seconds */
