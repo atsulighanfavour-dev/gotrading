@@ -184,31 +184,31 @@ let total = 10 - price * discount;
 let request = "The price is " + total;
 console.log(request);
 
-let day; 
+let day;
 let date = new Date().getDay();
 switch (date) {
   case 0:
     day = "Sunday";
-    break
+    break;
   case 1:
     day = "Monday";
-    break
+    break;
   case 2:
     day = "Tuesday";
-    break
+    break;
   case 3:
     day = "Wednesday";
-    break
+    break;
   case 4:
     day = "Thursday";
-    break
+    break;
   case 5:
     day = "Friday";
-    break
+    break;
   case 6:
     day = "Saturday";
 }
-console.log(day) 
+console.log(day);
 
 let texts;
 switch (new Date().getDay()) {
@@ -221,45 +221,44 @@ switch (new Date().getDay()) {
   default:
     texts = "I have two weeks left to go back to ozoro";
 }
-console.log(texts); 
+console.log(texts);
 
-
-let dates = (new Date().getDay()) 
- switch (dates) {
-   case 0:
-     text = "Church and fellowship";
-     break;
-   case 1:
-   case 2:
-   case 3:
-   case 4:
-   case 5:
-     text = "Today is for learning";
-     break;
-   case 6:
-     text = "Relaxation day";
-     //break;
-   //default:
-     //text = "And so on and so forth..yeah"
+let dates = new Date().getDay();
+switch (dates) {
+  case 0:
+    text = "Church and fellowship";
+    break;
+  case 1:
+  case 2:
+  case 3:
+  case 4:
+  case 5:
+    text = "Today is for learning";
+    break;
+  case 6:
+    text = "Relaxation day";
+  //break;
+  //default:
+  //text = "And so on and so forth..yeah"
 }
-console.log(text)
+console.log(text);
 
-console.log(x == 8)//false
-console.log(x != 8)//true
-console.log(x > 8)//false
+console.log(x == 8); //false
+console.log(x != 8); //true
+console.log(x > 8); //false
 //string alphabelt are lesser than number
-console.log(x < 8)//true
+console.log(x < 8); //true
 
 //The Boolean
 const year = new Date().getYear();
 let difference;
 
 if (year < 2003) {
- difference = 23;
+  difference = 23;
 } else {
- difference = 24;
+  difference = 24;
 }
-console.log(difference)
+console.log(difference);
 
 let numbers = "";
 let r = 1;
@@ -271,17 +270,28 @@ while (r < 10) {
 console.log(numbers);
 
 //The Boolean function
-console.log(Boolean(20 > 30));//false
+console.log(Boolean(20 > 30)); //false
 
 //Everything With a "Value" is True
 console.log(
-"100 is " + Boolean(100) + "<br>" +
-"3.14 is " + Boolean(3.14) + "<br>" +
-"-15 is " + Boolean(-15) + "<br>" +
-'"Hello" is ' + Boolean("Hello") + "<br>" +
-"'false' is " + Boolean('false') + "<br>" +
-"(1 + 7 + 3.14) is " + Boolean(1 + 7 + 3.14)
-)
+  "100 is " +
+    Boolean(100) +
+    "<br>" +
+    "3.14 is " +
+    Boolean(3.14) +
+    "<br>" +
+    "-15 is " +
+    Boolean(-15) +
+    "<br>" +
+    '"Hello" is ' +
+    Boolean("Hello") +
+    "<br>" +
+    "'false' is " +
+    Boolean("false") +
+    "<br>" +
+    "(1 + 7 + 3.14) is " +
+    Boolean(1 + 7 + 3.14),
+);
 
 //Everything Without a "value" is false
 //undefined, false, null, NaN, empty string, zero, minusZero are "no value"
@@ -297,14 +307,12 @@ console.log(R === S);
 //The && (AND) Operator
 let m = 6;
 let n = 3;
-console.log(
-(m < 10 && n > 1) + "<br>" +
-(m < 10 && n < 1))
+console.log((m < 10 && n > 1) + "<br>" + (m < 10 && n < 1));
 //The || (OR) Operator
-console.log(m > 10 || n > 10)//true
+console.log(m > 10 || n > 10); //true
 //The ! (Not) Operator
-console.log(m == 8)//false
-console.log(n != 8)//true
+console.log(m == 8); //false
+console.log(n != 8); //true
 
 //The Nllish Coeascing Operator (??)
 let month = "March";
@@ -312,10 +320,10 @@ let days = "";
 let result = month ?? days;
 console.log(result);
 
-const country = ["Nigeria", "Ghana", "Usa", "South-Africa", "Russia"]
+const country = ["Nigeria", "Ghana", "Usa", "South-Africa", "Russia"];
 let text2 = "";
 for (let i = 0; i < country.length; i++) {
-   text2 += country[i] + "<br>";
+  text2 += country[i] + "<br>";
 }
 console.log(text2);
 
@@ -324,27 +332,21 @@ let Immunization = "";
 for (let i = 0; i < 5; i++) {
   Immunization += "Year " + i + "<br>";
 }
-console.log(Immunization)
+console.log(Immunization);
 
 //Loop Scope
 let o = 10;
-for (o = 0; o < 15; o++) {
-
-}
-  console.log(o);
+for (o = 0; o < 15; o++) {}
+console.log(o);
 
 //Loop Scope
 let O = 10;
-for (let O = 0; O < 15; O++){
+for (let O = 0; O < 15; O++) {}
+console.log(O);
 
-}
-console.log(O)
-
-var boy = 2
-for (var boy = 0; boy < 10; boy++) {
-
-}
-console.log(boy)
+var boy = 2;
+for (var boy = 0; boy < 10; boy++) {}
+console.log(boy);
 
 let Characteristic = "";
 
@@ -353,23 +355,23 @@ while (P < 15) {
   Characteristic += "Type " + P + "<br>";
   P++;
 }
-console.log(Characteristic) 
+console.log(Characteristic);
 
 //reverse array
-const list = [1, 2, 3, 4]
-let next = ""
+const list = [1, 2, 3, 4];
+let next = "";
 for (let q = list.length - 1; q >= 0; q--) {
-  console.log(list[q])
-} 
+  console.log(list[q]);
+}
 
-const list1 = [1, 2, 3, 4]
-for (let q = 0; q < list1.length; q++) {
-} console.log(list)
+const list1 = [1, 2, 3, 4];
+for (let q = 0; q < list1.length; q++) {}
+console.log(list);
 
 //arrange array in decending form and track second largest
-const fac = [10, 5, 20, 8]
-fac.sort ((a, b) => b - a)
-console.log(fac[1])
+const fac = [10, 5, 20, 8];
+fac.sort((a, b) => b - a);
+console.log(fac[1]);
 
 let V = "";
 for (i = 0; i < 5; i = i + 2) {
@@ -386,8 +388,8 @@ do {
 } while (W < 6);
 console.log(demo);
 
-let stop = false
-let text3 = ""
+let stop = false;
+let text3 = "";
 loop1: for (let j = 1; j < 5 && !stop; j++) {
   loop2: for (let i = 1; i < 5; i++) {
     if (i === 3) {
@@ -399,7 +401,6 @@ loop1: for (let j = 1; j < 5 && !stop; j++) {
 }
 console.log(text3);
 console.log(stop);
-
 
 // function checkAge(age) {
 //   if (age < 18) {
@@ -416,20 +417,20 @@ function checkAge(age) {
   } else {
     return "Allowed";
   }
-} 
+}
 console.log(checkAge(9));
 
-function myFunction(p1,  p2) {
+function myFunction(p1, p2) {
   return p1 * p2;
 }
-let result2 = myFunction(12, 15)
-console.log(result2)
+let result2 = myFunction(12, 15);
+console.log(result2);
 
 //Template Strings allow interpolation of expressions in strings:
 let price1 = 10;
 let VAT = 0.25;
-let total1 = `Total: ${(price * (1 + VAT)).toFixed(2)}`;//
-console.log(total1)//result 12.50
+let total1 = `Total: ${(price * (1 + VAT)).toFixed(2)}`; //
+console.log(total1); //result 12.50
 
 let header = "Template strings";
 let tags = ["template strings", "javascript", "es6"];
@@ -443,43 +444,170 @@ let html = `
 document.getElementById("html").innerHTML = html;
 
 const male = "Oke";
-let Letter = male[2]; 
-console.log(Letter)
+let Letter = male[2];
+console.log(Letter);
 
 let text4 = "";
 function convert() {
   text4 = document.getElementById("by").innerHTML;
-  
- // document.getElementById("by").innerHTML = text4.toUpperCase();
+
+  // document.getElementById("by").innerHTML = text4.toUpperCase();
   document.getElementById("by").innerHTML = text4.toLowerCase();
-  
 }
 
 let text5 = "     Hello World!     ";
 let text6 = text5.trim();
-console.log(text5.length)//display 22
-console.log(text6.length)//display 12
+console.log(text5.length); //display 22
+console.log(text6.length); //display 12
 
-
-
- let text7 = "";
+let text7 = "";
 function replace() {
   text7 = document.getElementById("buy").innerHTML;
-  
-  document.getElementById("buy").innerHTML = text7.replace(/Microsoft/i, "W3schools");  
-} 
+
+  document.getElementById("buy").innerHTML = text7.replace(
+    /Microsoft/i,
+    "W3schools",
+  );
+}
 
 let text8 = "The rain in SPAIN stays mainly in the plain";
 const myArr = text8.match(/ain/g);
-console.log(myArr.length) 
-console.log(myArr)
+console.log(myArr.length);
+console.log(myArr);
+
+function eating() {
+  let script = `I'm eating 1 doughnut drinking Coke and 1 hotdog`;
+
+  console.log(script);
+}
+
+eating();
+
+const Book = {
+  title: "HTML",
+  color: "red",
+  purpose: "web structure",
+};
+console.log(Book.title + " is used for " + Book.purpose);
+
+let boys = {};
+
+let number = 5;
+if (2 == number) {
+  boys = "black";
+} else if (3 == number) {
+  boys = "white";
+} else {
+  boys = "all";
+}
+
+console.log(boys);
+
+let person = {
+  name: "John",
+  age: 30,
+};
+let result3 = "age";
+
+console.log(person[result3]);
+
+let person2 = {
+  firstname: "Atsulighan",
+  lastname: "Favour",
+  age: 50,
+};
+delete person2.age;
+
+person2.height = 6.1;
+
+let result4 =
+  "My name is " +
+  person2.firstname + " " +
+  person2.lastname +
+  " i am " +
+  person2.age +
+  " and " +
+  person2.height;
+console.log(result4);
+
+const myObj = {
+  name: "John",
+  age: 30,
+  myCars: {
+    car1: "Ford",
+    car2: "BMW",
+    car3: "Fiat",
+  },
+};
+
+let m2 = "myCars";
+let m3 = "car1";
+console.log(myObj[m2][m3]); 
+
+const person1 = {
+  name: "John",
+  hello: function() {
+    return "Hello " + this.name;
+  },
+};
+const person3 = {
+  name: "Anna",
+  hello: function () {
+    return this.name;
+  },
+};
+
+
+let result5 =
+  person1.hello() +
+  " I'm " +
+  person3.hello() +
+  " your new neighbor I can help you cool your body temperature, and I can also transform your relaxation state if you care";
+  
+console.log(result5)
+
+"use strict";
+//let public = 1500;
+//console.log(public)
+
+
+const tools = ["HTML", "CSS", "JavaScript", "React", "Bootstrap"];
+
+function renderList() {
+
+  let each = "<ul>";
+  tools.forEach(myFrontend);
+  each += "</ul>";
+  
+  document.getElementById("tools").innerHTML = each;
+
+  function myFrontend(value) {
+    each += "<li>" + value + "</li>";
+  }
+
+ 
+}
+
+renderList();
+     
+  function addtools() {
+    tools.push("Tailwind");
+    renderList();
+  }
 
 
 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
+// let text9 = "<ul>";
+// fruits.forEach(myFrontend);
+// text9 += "</ul>";
 
+// document.getElementById("tools").innerHTML = text9;
 
-
+// function myFrontend(value) {
+//   text9 += "<li>" + value + "</li>";
+// } 
 
 
 
