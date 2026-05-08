@@ -218,15 +218,7 @@ a {
 }
 
 @media (max-width: 320px) {
-  .top-bar {
-    display: none;
-  }
-
-  .open-nav {
-    margin-left: 50px;
-  }
-
-  .nav-bar.active .close-nav {
-    display: block;
+  body {
+    overflow-x: hidden;
   }
 }
