@@ -1,7 +1,11 @@
+* {
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
   border-top: 2px solid #efe8e9d3;
   overflow-x: hidden;
 }
@@ -217,7 +221,7 @@ a {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   body {
     overflow-x: hidden;
   }
@@ -225,6 +229,7 @@ a {
   .nav-bar.active .close-nav {
     display: block;
     position: relative;
-    left: -5px;
+    left: 10px;
+
   }
 }
