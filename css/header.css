@@ -221,4 +221,10 @@ a {
   body {
     overflow-x: hidden;
   }
+
+  .nav-bar.active .close-nav {
+    display: block;
+    position: relative;
+    left: -5px;
+  }
 }
