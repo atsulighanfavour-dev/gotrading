@@ -15,6 +15,7 @@ body {
   position: relative;
   margin: auto;
   transition: top 0.3s;
+  
 }
 
 .header,
@@ -214,10 +215,18 @@ a {
   .nav-bar.active .close-nav {
     display: block;
   }
+}
 
-  /* .open-nav {
-      display: block;
-      width: 10px;
-      margin: 20px;
-    } */
+@media (max-width: 320px) {
+  .top-bar {
+    display: none;
+  }
+
+  .open-nav {
+    margin-left: 50px;
+  }
+
+  .nav-bar.active .close-nav {
+    display: block;
+  }
 }
