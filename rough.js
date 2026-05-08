@@ -607,7 +607,11 @@ renderList();
 
 // function myFrontend(value) {
 //   text9 += "<li>" + value + "</li>";
-// } 
+// }
 
 
+console.log(document);
+
+let Hello = "boy"
+console.log(Hello);
 

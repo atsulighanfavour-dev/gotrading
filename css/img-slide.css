@@ -1,0 +1,25 @@
+.bg-container {
+  padding-top: 21px;
+  width: 100%;
+
+}
+
+.bg {
+  background: black;
+  height: 600px;
+  margin-top: -22px; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-content {
+  margin-top: -400px;
+  margin-left: 20px ;
+  color: white;
+}
+
+.explore {
+  background-color: blue;
+  display: inline-block;
+  padding: 10px 20px;
+}
