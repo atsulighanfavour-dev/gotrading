@@ -1,0 +1,96 @@
+.stats-container {
+    background: black;
+    margin-top: 180px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+.counting1,
+ .counting2 {
+    
+    background: rgb(237, 227, 227);
+    padding: 90px 212px;
+    margin-top: 100px;
+}
+
+.counting2 {
+    background: rgb(226, 206, 210);
+}
+
+.counting3 {
+    background: rgb(237, 227, 227);
+    display: inline;
+    padding: 90px 495px;
+    margin-bottom: 80px;
+}
+
+.counting1, .counting2, .counting3 {
+    display: flex;
+    height: 40px;
+}
+ 
+/* .txt {
+    position: relative;
+    top: 12px;
+    right: 5px;
+}  */
+
+@media (max-width: 1130px) {
+     .counting1,
+    .counting2 {
+       padding: 90px 170px; 
+    }
+
+    .counting3 {
+       padding: 90px 410px;  
+    }
+}
+
+@media (max-width: 960px) {
+    .counting1,
+    .counting2,
+    .counting3 {
+      min-width: 30%;  
+    }
+
+    .counting1,
+    .counting2 {
+       padding: 90px 115px;
+
+    }
+
+    .counting3 {
+       padding: 90px 300px;    
+    }
+}
+
+@media (max-width: 760px) {
+    .stats-container {
+      padding: 50px 5px;
+      height: 750px;
+    }
+
+    .counting1,
+    .counting2,
+    .counting3 {
+       padding: 90px;  
+       max-width: 700px;
+       width: 95%;
+       margin-top: 10px;
+    }
+
+    /* .counter {
+        padding: relative;
+        bottom: 15px;
+        left: 160px;
+    }
+
+    .txt {
+        position: relative;
+        left: 60px;
+        top: 15px;
+    } */
+}

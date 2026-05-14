@@ -1,7 +1,7 @@
 const slide = [
   {
     Image: "images/bitcoin.jpg",
-    title: "Very Much Convinient Than Others.",
+    title: "Very Much Convinient, Providing faster and smooter experience.",
     text: "Invest with us let your money do the work.",
     explore: "Discover More",
   },

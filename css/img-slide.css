@@ -1,15 +1,15 @@
 .bg-container {
   padding-top: 21px;
   width: 100%;
-
+  height: 415px;
 }
 
 .bg {
-  background: black;
   height: 600px;
   margin-top: -22px; 
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .bg-content {
@@ -18,8 +18,13 @@
   color: white;
 }
 
+
 .explore {
   background-color: blue;
   display: inline-block;
   padding: 10px 20px;
+}
+
+.explore {
+  margin-top: 20px;
 }
