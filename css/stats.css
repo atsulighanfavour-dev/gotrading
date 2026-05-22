@@ -12,7 +12,8 @@
  .counting2 {
     
     background: rgb(237, 227, 227);
-    padding: 90px 212px;
+    padding: 90px;
+    width: 38%;
     margin-top: 100px;
 }
 
@@ -23,7 +24,8 @@
 .counting3 {
     background: rgb(237, 227, 227);
     display: inline;
-    padding: 90px 495px;
+    padding: 90px;
+    width: 78%;
     margin-bottom: 80px;
 }
 
@@ -31,12 +33,28 @@
     display: flex;
     height: 40px;
 }
+
+.counter {
+    margin-top: -50px;
+    margin-left: -75px;
+    font-size: 45px;
+    color: rgb(61, 61, 222);
+    font-weight: 600; 
+}
  
-/* .txt {
-    position: relative;
-    top: 12px;
-    right: 5px;
-}  */
+ .txt1, .txt2, .txt3 {
+    margin-left: -50px;
+    text-transform: uppercase;
+    font-weight: 600;
+ }
+
+ .counting1 .txt1 {
+    margin-left: -75px;
+ }
+
+ .txt3 {
+    margin-left: -175px;
+ }
 
 @media (max-width: 1130px) {
      .counting1,
@@ -81,6 +99,8 @@
        width: 95%;
        margin-top: 10px;
     }
+
+   
 
     /* .counter {
         padding: relative;

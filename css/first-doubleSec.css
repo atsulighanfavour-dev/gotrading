@@ -1,0 +1,124 @@
+ .about-us {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  margin: 72px; 
+  width: 80%;
+  gap: 25px;
+  align-content: center;
+}
+
+.about-doc {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-para {
+  color: rgb(88, 85, 85);
+  font-size: 14px;
+  width: 100%;
+}
+
+.more-about {
+  background-color: rgb(58, 58, 210);
+  display: inline-block;
+  padding: 15px;
+  width: 37.5%;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.about-img img {
+    position: static;
+    display: flex;
+    width: 580px;
+    height: 360px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.more-details {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.about-hero {
+  padding: 50px 30px;
+  width: 22%;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-icon {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+  color: rgb(61, 61, 222);
+}
+
+.sec-heading {
+  font-size: 15px;
+  text-align: center;
+}
+
+@media (max-width: 1214px) {
+    .about-us { 
+        display: flex;  
+    }
+
+    .about-us {
+        display: grid;
+        grid-template-columns: 500px 500px;
+        margin-right: 50px;
+        gap: 10px;
+    }
+    
+     .about-para {
+        width: 100%;
+    } 
+
+    .about-img img {
+        display: flex;
+        max-width: 500px;
+        height: 350px;    
+    } 
+
+}
+
+@media (max-width: 1120px) {
+   .about-img img {
+        display: flex;
+        max-width: 370px;
+        height: 350px;    
+    }
+}
+
+@media (max-width: 1005px) {
+    .about-us {
+        display: block;
+    }
+
+    .about-para {
+      word-spacing: 5px;
+      line-height: 25px;
+    }
+
+    .more-about {
+        width: 30%;
+    }
+
+    .about-img img {
+        margin-top: 15px;
+        max-width: 100%;
+    }
+}
+
+
+ 
