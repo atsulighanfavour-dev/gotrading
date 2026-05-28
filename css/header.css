@@ -1,7 +1,7 @@
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -19,7 +19,6 @@ body {
   position: relative;
   margin: auto;
   transition: top 0.3s;
-  
 }
 
 .header,
@@ -121,16 +120,12 @@ a {
   display: none;
   font-size: 20px;
   background: none;
-  padding-bottom: -30px;
+  /* padding-bottom: -30px; */
   color: rgb(76, 67, 67);
   position: relative;
   top: 13px;
+  right: 70px;
 }
-
-/* .dropdown-toggle {
-  position: relative;
-  display: inline-block
-} */
 
 .dropdown-menu {
   display: none;
@@ -155,16 +150,18 @@ a {
     border-bottom: 1px solid;
   }
 
-  .nav-bar ul a {
-    display: none;
+   .bottom-right  .nav-container ul a {
     width: 100%;
-  }
-
-   .nav-section {
+  } 
+    
+  .nav-bar .nav-container ul a{
+    display: none;
+  } 
+  
+  .nav-container .nav-section  {
     display: flex;
     flex-direction: column;
-    
-  } 
+  }
 
   .img-logo {
     width: 10vw;
@@ -175,17 +172,18 @@ a {
     top: 1px;
     margin-right: 50px;
   }
-
-  .nav-bar.active .nav-section li a {
-    display: flex;
-    flex-direction: column;
+   
+  .nav-section li a {
+    display: block;
     background-color: white;
-    max-height: 300px;
   }
+
+  .nav-bar.active .nav-container ul a {
+    display: block;
+  } 
 
   .open-nav {
     display: block;
-    margin-right: 70px;
   }
 
   .nav-bar.active .open-nav {
@@ -200,6 +198,7 @@ a {
     display: block;
     max-width: 100%;
   }
+
 }
 
 @media (max-width: 960px) {
@@ -225,11 +224,3 @@ a {
     display: block;
   }
 }
-
-/* @media (max-width: 380px) {
-  .nav-bar.active .close-nav {
-    display: block;
-    position: relative;
-    right: 20px;
-  }
-} */

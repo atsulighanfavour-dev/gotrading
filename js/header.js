@@ -4,6 +4,7 @@ window.addEventListener("scroll", () => {
   if (window.scrollY > 100) {
     bar.style.position = "fixed";
     bar.style.top = "0";
+    bar.style.zIndex = "1000"
   } else {
     bar.style.position = "relative";
   }
