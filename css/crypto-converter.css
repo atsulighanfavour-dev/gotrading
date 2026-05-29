@@ -1,0 +1,51 @@
+table {
+    width: 100%;
+    overflow-x:auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: rgb(153, 153, 159);
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+th.active {
+    background-color: whitesmoke;
+} 
+
+tbody {
+    border-bottom: 1px solid #ccc; 
+   
+    margin: 0;
+    padding: 0;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+td:first-child{
+   text-align:left;
+   
+}
+
+td:first-child img {
+   position: relative;
+   bottom: 10%;
+}
+
+
+td:last-child{
+   text-align:right;
+   position: relative;
+   right: -35%;
+}
+
+

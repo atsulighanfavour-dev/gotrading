@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="css/stats.css" />
     <link rel="stylesheet" href="css/first-doubleSec.css" />
     <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/crypto-converter.css" />
     <script src="js/header.js" defer></script>
     <script src="js/img-slide.js" defer></script>
     <script src="js/stats.js" defer></script>
+    <script src="js/crypto-converter.js" defer></script>
   </head>
   <body style="height: 10000px">
     <header>
@@ -135,7 +137,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="service-sec">
       <div class="about-us">
         <div class="about-doc">
           <h2>About Us</h2>
@@ -333,6 +335,21 @@
           </div>
         </div>
       </div>
+    </section>
+    <section>
+
+      <table>
+        <thead id="currency">
+          <tr>
+            <th data-currency="usd">USD</th>
+            <th data-currency="eur">EUR</th>
+            <th data-currency="ngn">NGN</th>
+            <th data-currency="gbp">GBP</th>
+          </tr>
+        </thead>
+
+        <tbody id="cryptoTable"></tbody>
+      </table>
     </section>
   </body>
 </html>
