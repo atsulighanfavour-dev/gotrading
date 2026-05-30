@@ -1,44 +1,40 @@
-table {
+.crypto-converter {
     width: 100%;
     overflow-x:auto;
     border-collapse: collapse;
+
 }
 
-th, td {
-    padding: 10px;
+.currency-head, td  {
+    padding: 9px;
     text-align: center;
+    
 }
 
-th {
+.currency-head {
     background-color: rgb(153, 153, 159);
     color: black;
     cursor: pointer;
     transition: 0.3s;
 }
 
-th.active {
+.currency-head.active {
     background-color: whitesmoke;
 } 
 
-tbody {
+#cryptoTable {
     border-bottom: 1px solid #ccc; 
-   
     margin: 0;
     padding: 0;
 }
 
-tbody tr {
+#cryptoTable tr {
     border-bottom: 1px solid #ccc;
+    width: 100%;
 }
-
+ 
 td:first-child{
-   text-align:left;
-   
-}
-
-td:first-child img {
-   position: relative;
-   bottom: 10%;
+   text-align:left;  
 }
 
 
@@ -46,6 +42,5 @@ td:last-child{
    text-align:right;
    position: relative;
    right: -35%;
-}
-
+} 
 
