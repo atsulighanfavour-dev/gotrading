@@ -20,7 +20,11 @@
 
 .currency-head.active {
     background-color: whitesmoke;
-} 
+}
+
+.currency-head:hover {
+    background-color: whitesmoke;
+}
 
 #cryptoTable {
     border-bottom: 1px solid #ccc; 
@@ -33,12 +37,12 @@
     width: 100%;
 }
  
-td:first-child{
+.c_t:first-child{
    text-align:left;  
 }
 
 
-td:last-child{
+.c_t:last-child{
    text-align:right;
    position: relative;
    right: -35%;

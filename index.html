@@ -1,23 +1,24 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gotrading: Home</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/img-slide.css" />
-    <link rel="stylesheet" href="css/stats.css" />
-    <link rel="stylesheet" href="css/first-doubleSec.css" />
-    <link rel="stylesheet" href="css/service.css" />
-    <link rel="stylesheet" href="css/crypto-converter.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/img-slide.css">
+    <link rel="stylesheet" href="css/stats.css">
+    <link rel="stylesheet" href="css/first-doubleSec.css">
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="stylesheet" href="css/crypto-converter.css">
+    <link rel="stylesheet" href="css/crypto-market.css">
     <script src="js/header.js" defer></script>
     <script src="js/img-slide.js" defer></script>
     <script src="js/stats.js" defer></script>
     <script src="js/crypto-converter.js" defer></script>
+    <script src="js/crypto-market.js" defer></script>
   </head>
   <body style="height: 10000px">
     <header>
@@ -137,7 +138,7 @@
         </div>
       </div>
     </section>
-    <section class="service-sec">
+    <section id="about">
       <div class="about-us">
         <div class="about-doc">
           <h2>About Us</h2>
@@ -202,7 +203,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="service">
       <div class="our-service">
         <div class="services">
           <h2 class="service-header">Our Services</h2>
@@ -210,6 +211,7 @@
             <i class="fa-solid fa-minus"></i>
           </div>
         </div>
+
         <div class="service-container">
           <div class="service-img">
             <img src="images/bitcoin.jpg" />
@@ -352,23 +354,24 @@
       </table>
     </section>
     <section>
-
-      <table>
-        <thead id="">
+     <div class="table-wrapper">
+         <table class="crypto-table">
+        <thead id="market_head">
           <tr>
-            <th data-sort="name">Name<span>203 Matches</span></th>
-            <th data-sort="market_cap">Mkt Cap</th>
-            <th data-sort="fully_diluted_valuation">fd Mkt Cap</th>
-            <th data-sort="current_price">Price</th>
-            <th data-sort="circulating_supply">Avail Coins</th>
-            <th data-sort="total_supply">Total Coins</th>
-            <th data-sort="total_volume">Traded Vol</th>
-            <th data-sort="price_change_change_24h">Chg %</th>
+            <th class="table_head" data-sort="name">Names</th>
+            <th class="table_head" data-sort="market_cap">Mkt Cap</th>
+            <th class="table_head" data-sort="fully_diluted_valuation">fd Mkt Cap</th>
+            <th class="table_head" data-sort="current_price">Price</th>
+            <th class="table_head" data-sort="circulating_supply">Avail Coins</th>
+            <th class="table_head" data-sort="total_supply">Total Coins</th>
+            <th class="table_head" data-sort="total_volume">Traded Vol</th>
+            <th class="table_head" data-sort="price_change_percentage_24h">Chg %</th>
           </tr>
         </thead>
 
-        <tbody id=""></tbody>
+        <tbody id="crypto_market"></tbody>
       </table> 
+     </div>
     </section> 
   </body>
 </html>

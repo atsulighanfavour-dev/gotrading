@@ -100,9 +100,12 @@
     .service-container {
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 170px;
-        width: 110%;
+        gap: 30px;
+        width: 110%; 
+    }
+
+    .service-img{
+      margin-top: 50px;
     }
 
     .service-img img {
@@ -110,14 +113,15 @@
     }
 
     .service-para {
-        position: relative;
-        top: 140px;
+       position: relative;
+       top: 190px; 
+        
     }
 }
 
-@media (max-width: 960px) {
+/* @media (max-width: 960px) {
     .service-container {
-        display: flex;
+        display: in;
         gap: 60px;
         padding-left: 5px;
         width: 100%;
@@ -145,7 +149,7 @@
 }
 
 
-@media (max-width: 780px) {
+@media (max-width: 760px) {
     .our-service {
       height: 3250px;
     }
@@ -163,4 +167,4 @@
         top: 30px;
     }
 }
-
+ */

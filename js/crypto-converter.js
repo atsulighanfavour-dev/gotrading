@@ -1,4 +1,4 @@
-const headers = document.querySelectorAll("th");
+const headers = document.querySelectorAll(".currency-head");
 
 const symbols = {
   usd: "$",
@@ -19,29 +19,29 @@ async function fetchCrypto(currency = "usd") {
   document.getElementById("cryptoTable").innerHTML = `
     
        <tr>
-           <td><img src="${data[0].image}" width="15">
+           <td class="c_t"><img src="${data[0].image}" width="15">
                BTC
             </td>
-            <td>${sign}${data[0].current_price}</td>
+            <td class="c_t">${sign}${data[0].current_price}</td>
         </tr>
 
         <tr>
-            <td><img src="${data[1].image}" width="15">
+            <td class="c_t"><img src="${data[1].image}" width="15">
                ETH
             </td>
-            <td>${sign}${data[1].current_price}</td>
+            <td class="c_t">${sign}${data[1].current_price}</td>
         </tr>
 
         <tr>
-            <td><img src="${data[2].image}" width="15">
+            <td class="c_t"><img src="${data[2].image}" width="15">
               SOL</td>
-            <td>${sign}${data[2].current_price}</td>
+            <td class="c_t">${sign}${data[2].current_price}</td>
         </tr>
 
         <tr>
-            <td><img src="${data[3].image}" width="15">
+            <td class="c_t"><img src="${data[3].image}" width="15">
              DOGE</td>
-            <td>${sign}${data[3].current_price}</td>           
+            <td class="c_t">${sign}${data[3].current_price}</td>           
         </tr>
 
     `;
@@ -64,10 +64,10 @@ headers.forEach((header) => {
 });
 
 
-document.querySelectorAll("*").forEach(el => {
-    if (el.offsetWidth > 
-        document.documentElement.clientWidth) {
-          console.log(el)
-        }
- })
+// document.querySelectorAll("*").forEach(el => {
+//     if (el.offsetWidth > 
+//         document.documentElement.clientWidth) {
+//           console.log(el)
+//         }
+//  })
 
