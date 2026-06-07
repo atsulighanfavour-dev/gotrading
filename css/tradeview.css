@@ -1,0 +1,29 @@
+.tradeview_sec {
+  position: relative;
+  top: -13px;
+}
+
+.market_tradeview {
+  padding: 20px 0;
+  background-color: whitesmoke;
+}
+
+.tradeview_para {
+  text-align: center;
+  font-size: 13px;
+  color: rgb(88, 85, 85);
+}
+
+.tradeview_s {
+  color: rgb(135, 135, 225);
+}
+
+.layout_tradeview {
+  padding: 30px 0;
+  background-color: white;
+}
+
+.quote_tradeview {
+  padding: 12px 0;
+  background-color: whitesmoke;
+}

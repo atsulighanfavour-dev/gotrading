@@ -1,19 +1,22 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gotrading: Home</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/img-slide.css">
-    <link rel="stylesheet" href="css/stats.css">
-    <link rel="stylesheet" href="css/first-doubleSec.css">
-    <link rel="stylesheet" href="css/service.css">
-    <link rel="stylesheet" href="css/crypto-converter.css">
-    <link rel="stylesheet" href="css/crypto-market.css">
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/img-slide.css" />
+    <link rel="stylesheet" href="css/stats.css" />
+    <link rel="stylesheet" href="css/first-doubleSec.css" />
+    <link rel="stylesheet" href="css/service.css" />
+    <link rel="stylesheet" href="css/crypto-converter.css" />
+    <link rel="stylesheet" href="css/crypto-market.css" />
+    <link rel="stylesheet" href="css/tradeview.css" />
+    <link rel="stylesheet" href="css/question.css">
     <script src="js/header.js" defer></script>
     <script src="js/img-slide.js" defer></script>
     <script src="js/stats.js" defer></script>
@@ -282,7 +285,10 @@
               <div class="service-fonts">
                 <i class="fa-solid fa-chart-column"></i>
               </div>
-              <div class="service-title">Non Farm Payroll<br> [NPF]</div>
+              <div class="service-title">
+                Non Farm Payroll<br />
+                [NPF]
+              </div>
             </div>
             <div class="service-para">
               <p class="s-p">
@@ -339,7 +345,6 @@
       </div>
     </section>
     <section>
-
       <table class="crypto-converter">
         <thead id="currency">
           <tr>
@@ -354,24 +359,104 @@
       </table>
     </section>
     <section>
-     <div class="table-wrapper">
-         <table class="crypto-table">
-        <thead id="market_head">
-          <tr>
-            <th class="table_head" data-sort="name">Names</th>
-            <th class="table_head" data-sort="market_cap">Mkt Cap</th>
-            <th class="table_head" data-sort="fully_diluted_valuation">fd Mkt Cap</th>
-            <th class="table_head" data-sort="current_price">Price</th>
-            <th class="table_head" data-sort="circulating_supply">Avail Coins</th>
-            <th class="table_head" data-sort="total_supply">Total Coins</th>
-            <th class="table_head" data-sort="total_volume">Traded Vol</th>
-            <th class="table_head" data-sort="price_change_percentage_24h">Chg %</th>
-          </tr>
-        </thead>
+      <div class="table-wrapper">
+        <table class="crypto-table">
+          <thead id="market_head">
+            <tr>
+              <th class="table_head" data-sort="name">Names</th>
+              <th class="table_head" data-sort="market_cap">Mkt Cap</th>
+              <th class="table_head" data-sort="fully_diluted_valuation">
+                fd Mkt Cap
+              </th>
+              <th class="table_head" data-sort="current_price">Price</th>
+              <th class="table_head" data-sort="circulating_supply">
+                Avail Coins
+              </th>
+              <th class="table_head" data-sort="total_supply">Total Coins</th>
+              <th class="table_head" data-sort="total_volume">Traded Vol</th>
+              <th class="table_head" data-sort="price_change_percentage_24h">
+                Chg %
+              </th>
+            </tr>
+          </thead>
 
-        <tbody id="crypto_market"></tbody>
-      </table> 
-     </div>
-    </section> 
+          <tbody id="crypto_market"></tbody>
+        </table>
+      </div>
+    </section>
+    <section>
+      <div class="tradeview_sec">
+        <div class="market_tradeview">
+          <p class="tradeview_para">
+            Cryptocurrency Market by<span class="tradeview_s">
+              TradingView</span
+            >
+          </p>
+        </div>
+        <div class="layout_tradeview"></div>
+        <div class="quote_tradeview">
+          <p class="tradeview_para">
+            <span class="tradeview_s">Quotes</span> by Trading View
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="questioniares">
+        <h2 class="head_title">Frequently Asked Questions</h2>
+
+        <div class="questions_ans">
+          <h3 class="question">
+            What's the duration for completing the withdrawal process?
+          </h3>
+          <div class="ans_box">
+            <p class="ans">
+              Typically, withdrawals are processed within a few hours, but
+              occasionally, there might be delays due to financial institutions.
+              Rest assured, we strive to expedite withdrawals as swiftly as
+              possible.
+            </p>
+          </div>
+        </div>
+
+        <div class="questions_ans">
+          <h3 class="question">
+            How much time does it typically take for deposit to show up in my
+            account
+          </h3>
+          <div class="ans_box">
+            <p class="ans">
+              Upon receipt of the deposit, it usually takes 1 to 2 hours.
+            </p>
+          </div>
+        </div>
+
+        <div class="questions_ans">
+          <h3 class="question">Do any of your services with fees?</h3>
+          <div class="ans_box">
+            <p class="ans">
+              We don't bill for our services since we cover our profits first
+              before allocating investors their agreed-upon profit rates.
+              Occasionally, certain investment options may involve fees, and in
+              those instances, we ensure investors are thoroughly informed and
+              advised.
+            </p>
+          </div>
+        </div>
+
+        <div class="questions_ans">
+          <h3 class="question">what are the odds that I'll</h3>
+          <div class="ans_box">
+            <p class="ans">
+              While there's inherent risk in fund investments, we prioritize
+              safety by insuring all invested funds. This means that if trading
+              takes an unfavorable turn, the amount invested at the time is
+              protected by insurance. Additionally, we have a one million dollar
+              Employee Negligence cover in place.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
