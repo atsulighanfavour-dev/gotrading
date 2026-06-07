@@ -1,12 +1,14 @@
 .service-sec {
+  padding: 0;
   margin: 0;
-  padding: auto;
 }
 
 .our-service {
   background-color: rgb(17, 17, 17);
   margin-top: 75px;
   height: 1200px;
+  align-items: center;
+  width: 100%;
 }
 
 .services {
@@ -21,7 +23,7 @@
 
 .service-container {
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 5%;
   column-gap: -30px !important;
   position: relative;
@@ -32,6 +34,10 @@
   
 }
 
+.service-img {
+  overflow:hidden;
+}
+
 .service-img img {
   display: block;
   height: 210px;
@@ -40,7 +46,7 @@
   padding: 0;
 }
 
-.img-layout {
+.img-overlay {
   display: flex;
   gap: 15px;
   position: relative;
@@ -92,79 +98,50 @@
   top: -20px;
 }
 
-@media (max-width: 1020px) {
-    .our-service {
-      height: 3600px;
+@media (max-width: 1137px){
+    .service-contanier{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    .service-container {
-        display: flex;
-        flex-direction: column;
+    .service-fonts,
+    .service-title {
+      position: relative;
+      left: 10px;
+    }
+
+    .service-para {
+      position: relative;
+      top: -4px;
+    }
+}
+
+@media (max-width: 1038px){
+    .service-container{
+        grid-template-columns:1fr;
         gap: 30px;
-        width: 110%; 
+       margin-left: 50px;
+       width: 100%;
     }
 
-    .service-img{
-      margin-top: 50px;
-    }
-
-    .service-img img {
-        height: 260px;
-    }
-
-    .service-para {
-       position: relative;
-       top: 190px; 
-        
-    }
-}
-
-/* @media (max-width: 960px) {
-    .service-container {
-        display: in;
-        gap: 60px;
-        padding-left: 5px;
-        width: 100%;
-     }
-
-    .service-para {
-        position: relative;
-        top: 100px;
-    }
-}
-
-@media (max-width: 880px) {
-
-    .service-container {
-        display: flex;
-        gap: 60px;
-        padding-left: 5px;
-        width: 100%;
-     }
-
-    .service-para {
-        position: relative;
-        top: 70px;
-    }
-}
-
-
-@media (max-width: 760px) {
     .our-service {
-      height: 3250px;
+      height: 2750px;
+      overflow: hidden;
     }
-
-     .service-container {
-        display: flex;
-        gap: 70px;
-        padding-left: 5px;
-        width: 100%;
-     }
-        
 
     .service-para {
-        position: relative;
-        top: 30px;
+      max-height:120px;
+      min-height: 180px;
+      margin-top: -84px;
     }
 }
- */
+
+@media (max-width: 768px) {
+   .service-container{
+        grid-template-columns:1fr; 
+        margin: 0;
+        padding: 0;
+        width: 95%;
+    }
+
+}
+
