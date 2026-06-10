@@ -64,10 +64,6 @@ headers.forEach((header) => {
 });
 
 
-// document.querySelectorAll("*").forEach(el => {
-//     if (el.offsetWidth > 
-//         document.documentElement.clientWidth) {
-//           console.log(el)
-//         }
-//  })
+
+ 
 

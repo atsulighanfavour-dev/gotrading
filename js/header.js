@@ -20,4 +20,7 @@ openBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   nav.classList.remove("active")
-});
+ });
+
+
+

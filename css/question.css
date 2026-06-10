@@ -1,6 +1,10 @@
 .questioniares {
     background: black;
     overflow: hidden;
+    position: relative;
+    top: -15px;
+    padding-bottom: 15px;
+    margin-bottom: -15px;
 }
 
 .head_title {
@@ -25,13 +29,20 @@
 
 .ans_box {
     background-color: white;
+    display: none;
+}
+
+.ans_box.active {
+    display: block;
 }
 
 .ans {
     padding: 12px 5px;
     color: black;
-    /* display: none; */
+    
 }
+
+
 
 @media (max-width: 768px) {
     .questions_ans {
