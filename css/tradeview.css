@@ -26,4 +26,38 @@
 .quote_tradeview {
   padding: 12px 0;
   background-color: whitesmoke;
+
+}
+
+.tradeview_container {
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+  margin-bottom: -20px;
+}
+
+.crypto-card {
+  min-width: 300px;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.bottom {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.green {
+  color: #089981;
+}
+
+.red {
+  color: #f23645;
 }
