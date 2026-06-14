@@ -1,0 +1,187 @@
+.excos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 80px 80px;
+}
+.team_card1 {
+  height: 470px;
+  width: 425px;
+}
+
+.exco_card_img {
+  height: 300px;
+  width: 425px;
+  background: url(../images/team.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exco_card_img1 {
+  height: 250px;
+  width: 425px;
+  background: url(../images/team2.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exco_details {
+  background: whitesmoke;
+  padding: 15px;
+  text-align: center;
+}
+
+.exco_name {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.exco_position {
+  color: rgb(44, 44, 206);
+  font-size: 13px;
+}
+
+.exco_biography {
+  font-size: 13px;
+  display: block;
+}
+
+.bio_head {
+  font-size: 30px;
+}
+
+.team_row {
+  display: flex;
+  flex-direction: row;
+  padding-left: 90px;
+  gap: 20px;
+}
+
+.team_card2 {
+  height: 330px;
+  width: 260px;
+}
+
+.exco_card_img2 {
+  height: 200px;
+  width: 260px;
+  background: url(../images/team3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exco_card_img3 {
+  height: 200px;
+  width: 260px;
+  background: url(../images/team4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exco_card_img4 {
+  height: 200px;
+  width: 260px;
+  background: url(../images/team5.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.exco_card_img5 {
+  height: 200px;
+  width: 260px;
+  background: url(../images/team6.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 960px) {
+  .excos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .team_card1 {
+    height: 500px;
+    width: 630px;
+    margin-bottom: -50px;
+  }
+
+  .team_card1 .exco_card_img1 {
+    margin-top: 30px;
+  }
+
+  .exco_card_img,
+  .exco_card_img1 {
+    width: 630px;
+  }
+
+  .exco_details {
+    padding: 20px;
+  }
+
+  .exco_details {
+    margin-bottom: -60px;
+  }
+
+  .team_row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team_card2 {
+    height: 400px;
+    width: 320px;
+  }
+
+  .exco_card_img2,
+  .exco_card_img3,
+  .exco_card_img4,
+  .exco_card_img5 {
+    width: 320px;
+    gap: -100px;
+  }
+}
+
+@media (max-width: 760px) {
+  .excos,
+  .team_row {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 ;
+    position: relative;
+    left: 8px;
+    margin-top: 70px;
+  }
+
+  .team_card1 {
+    position: relative;
+    bottom: 60px;
+    top: 1px;
+  }
+
+  .team_card1,
+  .team_card2 {
+    width: 97%;
+    height: 480px;
+  }
+
+  .exco_card_img,
+  .exco_card_img1,
+  .exco_card_img2,
+  .exco_card_img3,
+  .exco_card_img4,
+  .exco_card_img5 {
+    width: 100%;
+    height: 390px;
+  }
+
+  .exco_biography {
+    margin-top: 60px;
+  }
+}
