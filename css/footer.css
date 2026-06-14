@@ -87,15 +87,17 @@
 .newsletter {
   display: flex;
   position: relative;
-  left: 64%;
+  left: 70%;
   top: -30px;
   max-width: 90%;
 }
 
 .newsletter_input,
 .newsletter_button {
-  padding: 20px 30px;
   overflow: hidden;
+  padding: 20px 23px;
+ /* border-radius: 50px; */
+
 }
 
 .newsletter_button {
