@@ -103,6 +103,7 @@
 .newsletter_button {
   color: rgb(54, 54, 238);
   cursor: pointer;
+  padding: 0 10px;
 }
 
 .brand {
