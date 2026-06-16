@@ -1,18 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gotrading: Login</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/login_form.css" />
     <script src="../js/header.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
       <!--Top-Bar-->
       <div id="top-bar" class="top-bar">
@@ -62,13 +63,17 @@
                   <a href="#" class="dropdown-toggle">Company &gt;</a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="../pages/about.html" class="more-link">About Us</a>
+                      <a href="../pages/about.html" class="more-link"
+                        >About Us</a
+                      >
                     </li>
                     <li>
                       <a href="../pages/team.html" class="more-link">Team</a>
                     </li>
                     <li>
-                      <a href="../pages/policies.html" class="more-link">Our Policies</a>
+                      <a href="../pages/policies.html" class="more-link"
+                        >Our Policies</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -76,13 +81,19 @@
                   <a href="#" class="dropdown-toggle">Associate &gt;</a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="../pages/realestates.html" class="more-link">Real Estate</a>
+                      <a href="../pages/realestates.html" class="more-link"
+                        >Real Estate</a
+                      >
                     </li>
                     <li>
-                      <a href="../pages/goldminning.html" class="more-link">Gold Mining</a>
+                      <a href="../pages/goldminning.html" class="more-link"
+                        >Gold Mining</a
+                      >
                     </li>
                     <li>
-                      <a href="../pages/carbonemmision.html" class="more-link">Carbon Emmission</a>
+                      <a href="../pages/carbonemmision.html" class="more-link"
+                        >Carbon Emmission</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -101,6 +112,41 @@
         </div>
       </div>
     </header>
+    <section>
+      <div class="form_background">
+        <div class="form_container">
+          <h2 class="form_logo">Gotrading</h2>
+
+          <p class="subtitle">Sign into your account</p>
+
+          <form action="post">
+            <div class="input-box">
+              <input
+                class="login_input"
+                type="email"
+                placeholder="Email"
+                required
+              />
+              <i id="login_font" class="fa-solid fa-user"></i>
+            </div>
+            <div class="input-box">
+              <input
+                class="login_input"
+                type="password"
+                placeholder="Password"
+                required
+              />
+              <i id="login_font" class="fa-solid fa-lock"></i>
+            </div>
+            <a class="forgot-password" href="#">Forgot password?</a>
+            <button type="submit" class="sign_in_btn">Sign in</button>
+            <p class="sign_up">
+              Don't have an account?<a class="sign_up_link" href="#">sign up</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="footer_container">
         <div class="footer_one">
@@ -125,21 +171,31 @@
             <h2 class="footer_about">Company</h2>
             <a class="footer_more" href="../pages/about.html">About Us</a>
             <a class="footer_more" href="../pages/team.html">Team</a>
-            <a class="footer_more" href="../pages/policies.html">Our Policies</a>
+            <a class="footer_more" href="../pages/policies.html"
+              >Our Policies</a
+            >
             <a class="footer_more" href="../pages/contact.html">Contact Us</a>
           </div>
 
           <div class="f_a">
             <h2 class="footer_about">Services</h2>
-            <a class="footer_more" href="../pages/crypto.html">Digital-currencies</a>
-            <a class="footer_more" href="../pages/goldminning.html">Gold Mining</a>
+            <a class="footer_more" href="../pages/crypto.html"
+              >Digital-currencies</a
+            >
+            <a class="footer_more" href="../pages/goldminning.html"
+              >Gold Mining</a
+            >
             <a class="footer_more" href="#">Forex</a>
             <a class="footer_more" href="#">Loans</a>
             <a class="footer_more" href="#">NFP</a>
             <a class="footer_more" href="#">Investment Pools</a>
             <a class="footer_more" href="#">Escrow Service</a>
-            <a class="footer_more" href="../pages/carbonemmision.html">Carbon Emission</a>
-            <a class="footer_more" href="../pages/realestates.html">Real Estate</a>
+            <a class="footer_more" href="../pages/carbonemmision.html"
+              >Carbon Emission</a
+            >
+            <a class="footer_more" href="../pages/realestates.html"
+              >Real Estate</a
+            >
           </div>
         </div>
 
@@ -173,9 +229,13 @@
         </div>
 
         <div class="policies">
-          <p><a class="footer_more4" href="../pages/policies.html">Company Policies</a></p>
+          <p>
+            <a class="footer_more4" href="../pages/policies.html"
+              >Company Policies</a
+            >
+          </p>
         </div>
       </div>
     </footer>
-</body>
+  </body>
 </html>

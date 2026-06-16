@@ -1,0 +1,87 @@
+.form_background {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(70, 71, 72);
+}
+
+.form_container {
+  background: whitesmoke;
+  border: 1px solid darkblue;
+  text-align: center;
+  height: 300px;
+}
+
+.form_logo {
+  position: relative;
+  right: 22%;
+  text-transform: capitalize;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+.subtitle {
+  font-size: 14px;
+  position: relative;
+  right: 17.5%;
+  font-size: 15px;
+}
+
+.input-box {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.login_input {
+  padding: 9px 50px;
+  text-align: left;
+  border: none;
+}
+
+#login_font {
+  position: relative;
+  right: 30px;
+}
+
+.forgot-password {
+  position: relative;
+  top: 50%;
+  left: 15%;
+  text-align: left;
+  font-weight: lighter;
+  font-size: 14px;
+  text-transform: capitalize;
+  color: rgb(9, 9, 209);
+}
+
+.sign_in_btn {
+  padding: 9px 110px;
+  position: relative;
+  top: 40px;
+  right: 17%;
+  background: rgb(9, 9, 209);
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.sign_up {
+  position: relative;
+  top: 43px;
+  left: -5%;
+}
+
+.sign_up_link {
+  font-weight: lighter;
+  position: relative;
+  left: 5px;
+  top: 5%;
+  color: rgb(9, 9, 209);
+}
+
+@media (max-width: 765px) {
+  .sign_in_btn {
+    padding: 9px 60px;
+  }
+}
