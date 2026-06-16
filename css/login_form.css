@@ -84,9 +84,9 @@
 }
 
 @media (max-width: 765px) {
-  .login_input {
+  /* .login_input {
     padding: 9px 35px;
-  }
+  } */
 
   .sign_in_btn {
     padding: 9px 60px;
