@@ -19,6 +19,7 @@
   text-transform: capitalize;
   padding-top: 4%;
   padding-bottom: 4%;
+  color: gray;
 }
 
 .subtitle {
@@ -26,6 +27,7 @@
   position: relative;
   right: 17.5%;
   font-size: 15px;
+  color: gray;
 }
 
 .input-box {
@@ -42,6 +44,7 @@
 #login_font {
   position: relative;
   right: 30px;
+  color: gray;
 }
 
 .forgot-password {
@@ -81,6 +84,10 @@
 }
 
 @media (max-width: 765px) {
+  .login_input {
+    padding: 9px 35px;
+  }
+
   .sign_in_btn {
     padding: 9px 60px;
   }
