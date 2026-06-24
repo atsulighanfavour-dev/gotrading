@@ -52,7 +52,7 @@
 }
 
 .contact2_sec_container {
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
 .contact_title {
@@ -61,8 +61,13 @@
 }
 
 .contact_icon {
+    color: blue;
+    font-size: 25px;
+}
+
+.contact_icon1 {
     position: relative;
-    left: 2.5%;
+    left: 1.3%;
     color: blue;
     font-size: 25px;
 }
