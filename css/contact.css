@@ -1,0 +1,80 @@
+.contact1_sec_container {
+    height: 400px;
+    background: url(../images/team6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact1_title, .contact1_subcontainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 35%;  
+    width: 35%;
+}
+
+.contact1_title {
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+.contact1_subcontainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background: black;
+    padding: 10px 0;
+    padding-left: -20px;
+    margin-top: 10px;
+}
+
+.fa-home, .fa-circle {
+    color: white;
+    border-color: 2px solid rgba(232, 229, 229, 0.858);
+}
+.contact1_home {
+    position: relative;
+    left: 2px;
+    top: -0px;
+    color: white;
+    font-size: 15px;
+}
+
+.contact1 {
+    color: rgb(35, 35, 234);
+    text-transform: uppercase;
+    font-weight: thin;
+    font-size: 15px;
+}
+
+.contact2_sec_container {
+    padding-bottom: 20px;
+}
+
+.contact_title {
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.contact_icon {
+    position: relative;
+    left: 2.5%;
+    color: blue;
+    font-size: 25px;
+}
+
+@media (max-width: 1060px) {
+    .contact1_title, .contact1_subcontainer {
+        width: 35%;
+    }
+}
+
+@media (max-width: 820px) {
+    .contact1_title, .contact1_subcontainer {
+        width: 50%;
+    }
+}
