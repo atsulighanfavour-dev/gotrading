@@ -355,7 +355,7 @@ body {
   padding: 10px 10px;
   border-bottom: 1px solid #cfcfcf;
   align-items: center;
-  width:100%
+  width: 100%;
 }
 
 .coin {
@@ -368,7 +368,8 @@ body {
   font-size: 13px;
 }
 
-.price ,span {
+.price,
+span {
   font-weight: normal;
   margin-left: 5px;
 }
@@ -382,7 +383,6 @@ body {
   color: #c0392b;
   text-decoration: none;
 }
-
 
 @media (max-width: 768px) {
   .stats {
@@ -422,8 +422,8 @@ body {
   .services {
     grid-template-columns: 1fr;
   }
-  
-   .ticker-page {
+
+  .ticker-page {
     padding: 10px;
   }
 
@@ -440,4 +440,3 @@ body {
     padding: 18px 18px 16px;
   }
 }
-  

@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       title:
-        "Cosider Investing With A Reputable Company You Have Confidence In.",
+        "Consider Investing With A Reputable Company You Have Confidence In.",
       subtitle: "Rest easy Knowing Your Investments Are Secure With Us",
     },
     {
@@ -111,7 +111,6 @@ document.querySelectorAll(".currency-tabs span").forEach((tab) => {
     tab.classList.add("active");
   });
 });
-
 
 const tickerData = [
   { pair: "BTC/USD", price: "70,393.0", percent: "1.19%", delta: "845.00" },

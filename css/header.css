@@ -22,6 +22,7 @@
 
 .container {
   display: flex;
+  
   gap: 60px;
   padding-right: 15px;
   padding-left: 15px;
@@ -32,7 +33,7 @@
 .top-bar-area .row {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
 }
 
 .row {
@@ -48,10 +49,10 @@
 .top-left li {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
-.top-left .icon  {
+.top-left .icon {
   color: #007bff;
   font-size: 30px;
 }
@@ -71,7 +72,7 @@ span {
   list-style: none;
   display: flex;
   gap: 15px;
-} 
+}
 
 .info-box p {
   font-size: 15px;
@@ -139,7 +140,8 @@ nav .container {
   gap: 20px;
 }
 
-.navbar-nav-ml-auto a ,li  {
+.navbar-nav-ml-auto a,
+li {
   padding: 10px 0;
   color: #222;
   font-weight: 500;
@@ -152,11 +154,9 @@ nav .container {
   color: #007bff;
 }
 
-
-
 @media (max-width: 768px) {
-  .top-bar-area{
-    display: none;  
+  .top-bar-area {
+    display: none;
   }
 
   .wrap-sticky {
@@ -171,12 +171,12 @@ nav .container {
     position: absolute;
     margin-top: -23px;
     left: 21px;
-    width: 50px; 
-    height: 25px; 
+    width: 50px;
+    height: 25px;
     object-fit: fill;
   }
 
-   .navbar-toggle {
+  .navbar-toggle {
     display: block;
     position: sticky;
     margin-left: 420px;
@@ -201,7 +201,7 @@ nav .container {
 }
 
 @media (min-width: 1200px) {
-  .container{
-    width: 1170px;  
+  .container {
+    width: 1170px;
   }
 }
