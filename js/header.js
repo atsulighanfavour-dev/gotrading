@@ -1,3 +1,11 @@
+fetch("header.html")
+  .then(response => 
+    response.text())
+  .then(data => {
+    document.getElementById("header").innerHTML = data 
+})
+
+
 window.addEventListener("scroll", () => {
   const bar = document.getElementById("bottom-bar");
 
@@ -15,12 +23,12 @@ const closeBtn = document.getElementById("close-nav");
 const nav = document.getElementById("nav-bar");
 
 openBtn.addEventListener("click", () => {
-  nav.classList.add("active");
+  nav.classList.add("active")
 });
 
 closeBtn.addEventListener("click", () => {
   nav.classList.remove("active")
- });
-
+});
+ 
 
 
