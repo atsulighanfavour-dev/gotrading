@@ -52,6 +52,10 @@
   font-size: 30px;
 }
 
+.bio_para {
+  font-size: 15px;
+}
+
 .team_row {
   display: flex;
   flex-direction: row;

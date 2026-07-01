@@ -86,22 +86,29 @@
 
 .newsletter {
   display: flex;
-  position: relative;
-  left: 72%;
-  top: -30px;
-  max-width: 90%;
+  flex-direction: row;
+  gap: none;
+}
+
+.newsletter_input {
+  width: 250px;
 }
 
 .newsletter_input,
 .newsletter_button {
   overflow: hidden;
   padding: 15px 15px;
-  border-radius: 10px;
+  border-radius: 50px;
+  position: relative;
+  left: 65%; 
+  border: none;
 }
 
 .newsletter_button {
-  color: black;
+  background-color: rgb(15, 15, 229);
+  color: white;
   cursor: pointer;
+  
 }
 
 .brand {
@@ -135,22 +142,11 @@
   text-transform: capitalize;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 912px) {
   .footer_two {
     position: relative;
     top: -50px;
     text-align: center;
-  }
-
-  .newsletter {
-    display: flex;
-  }
-
-  .newsletter_button,
-  .newsletter_input {
-    position: relative;
-    top: 25px;
-    right: 340px;
   }
 
   .brand {
@@ -161,24 +157,29 @@
   .policies {
     display: none;
   }
-}
-
-@media (max-width: 820px) {
-  .newsletter_container {
-    display: flex;
-    justify-content: center;
-  }
 
   .newsletter {
-    width: 60%;
-    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .newsletter_input {
+    width: 230px;
   }
 
   .newsletter_input,
   .newsletter_button {
-    width: 90%;
+    text-align: center;
+    left: 0;
   }
 
+}
+
+@media (max-width: 820px) {
+  
 }
 
 @media (max-width: 768px) {
@@ -196,22 +197,4 @@
     position: relative;
     right: 85px;
   }
-
-  .newsletter_button,
-  .newsletter_input {
-    padding: 15px 15px;
-  } 
 }
-
-@media (max-width: 540px) {
-  .newsletter_button,
-  .newsletter_input {
-    width: 100%;
-    max-width: 300px; 
-  }
-
-  .newsletter_button {
-    width: 15%;
-  }
-}
-

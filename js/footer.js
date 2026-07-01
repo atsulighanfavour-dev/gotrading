@@ -1,4 +1,4 @@
-fetch("footer.html")
+fetch("../services/footer.html")
     .then(response =>
         response.text())
   .then(data => {
