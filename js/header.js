@@ -8,13 +8,21 @@ fetch("../services/header.html")
     const nav = document.getElementById("nav-bar");
 
       openBtn.addEventListener("click", () => {
-        console.log("button clicked");
         nav.classList.add("active");
       });
 
       closeBtn.addEventListener("click", () => {
         nav.classList.remove("active");
       });
+    
+    document.querySelectorAll(".dropdown-toggle").forEach((toggle) => {
+      toggle.addEventListener("click", (e) => {
+        console.log("button clicked");
+        e.preventDefault();
+        toggle.nextElementSibling.classList.toggle("active");
+      });
+    });
+
   });
 
 window.addEventListener("scroll", () => {
@@ -28,3 +36,4 @@ window.addEventListener("scroll", () => {
     bar.style.position = "relative";
   }
 });
+

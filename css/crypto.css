@@ -1,0 +1,64 @@
+.crypto-img {
+    background: url(../images/bitcoin.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+.crypto_txt, .crypto_txt1 {
+    padding: 30px;
+    font-size: 13px;
+}
+
+.crypto_txt1 {
+    margin-top: -30px;
+    padding-bottom: 50px;
+}
+
+.crypto_sec {
+    background-color: gray;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 60px;
+    gap: 30px;
+}
+
+.crypto_card {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    padding: 80px 100px;
+    background-color: white;
+    text-align: center;
+}
+
+.crypto-title {
+    background: black;
+    color: white;
+    padding: 10px;
+    width: 360px;
+    position: relative;
+    top: -60px;
+    left: -100px
+}
+
+.c_head1 {
+    font-size: 50px;
+}
+
+.c_head {
+    position: relative;
+    top: -40px;
+    text-transform: uppercase;
+    color: grey;
+}
+
+.c_txt {
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: grey;
+    white-space: nowprap;
+}
