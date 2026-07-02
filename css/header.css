@@ -97,15 +97,13 @@ body {
   height: 100px;
 }
 
-.nav-section,
-ul {
+.nav-section {
   display: flex;
   list-style: none;
   gap: 20px;
 }
 
 .nav-section,
-ul,
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -137,10 +135,8 @@ a {
 .dropdown-menu {
   position: absolute;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
   white-space: nowrap;
+  width: 200px;
   visibility: hidden;
 }
 
@@ -148,32 +144,27 @@ a {
   font-size: 10px;
   font-weight: bold;
 }
-.dropdown:hover .dropdown-menu a {
+.dropdown:hover .dropdown-menu {
   visibility: visible;
   font-size: 13px;
   text-transform: capitalize;
-  position: relative;
-  top: 30px;
+  position: absolute;
+  top: 100%;
+}
+
+.menu-card a {
+  display: flex;
+  flex-direction: column;
+  background: #f8f8f8;
+  border: 1px solid #f8f8f8;
+  padding: 10px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 @media (max-width: 1024px) {
   .bottom-bar {
     height: 50px;
-    border-bottom: 1px solid;
-  }
-
-  .bottom-right .nav-container ul a {
-    width: 100%;
-  }
-
-  .nav-bar .nav-container ul a {
-    display: none;
-  }
-
-  .nav-container .nav-section {
-    display: flex;
-    flex-direction: column;
-  }
+  } 
 
   .img-logo {
     width: 10%;
@@ -185,13 +176,38 @@ a {
     margin-right: 50px;
   }
 
-  .nav-section li a {
-    display: block;
-    background-color: white;
+  .nav-bar.active .nav-container {
+    right: 10px;
   }
 
-  .nav-bar.active .nav-container ul a {
+   .nav-container {
+    position: absolute;
+    top: 120px;
+    right: -100%;
+    width: 320px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding:30px 60px;
+    transition: right 0.4s ease;
+    z-index: 10;
+  } 
+
+  .nav-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+    width: 100%;
+    margin-top: -45px;
+  }
+
+  .nav-section a {
     display: block;
+    padding: 12px;
+    width: 100%; 
   }
 
   .open-nav {
@@ -208,8 +224,6 @@ a {
 
   .nav-bar.active .close-nav {
     display: block;
-    transform: translateX(0);
-    max-width: 100%;
   }
 }
 
@@ -222,9 +236,7 @@ a {
     margin-left: 15px;
   }
 
-  .nav-bar.active .close-nav {
-    display: block;
-  }
+  
 }
 
 @media (max-width: 760px) {
@@ -232,7 +244,8 @@ a {
     display: none;
   }
 
-  .nav-bar.active .close-nav {
-    display: block;
+  .nav-container {
+    position: absolute;
+    top: 52px;
   }
 }
